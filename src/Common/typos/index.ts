@@ -9,3 +9,13 @@ const BaseMontserratText = styled.span`
 const BaseRalewayText = styled.span`
    ${tw`font-raleway`}
 `
+
+const BaseBoldRalewayText = styled(BaseRalewayText)`
+   ${tw`font-bold`}
+`
+
+export const Typo36Grey20RalewayBold = styled(BaseBoldRalewayText)`
+   ${tw`
+      text-36px text-gray20
+   `}
+`

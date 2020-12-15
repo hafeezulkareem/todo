@@ -1,4 +1,10 @@
 const colors = require('tailwindcss/colors')
+const customColors = {
+   burntSienna: '#EB5757',
+   gray20: '#333333',
+   royalBlue: '#2F80ED',
+   silverChalice: '#A9A9A9'
+}
 
 module.exports = {
    purge: [],
@@ -25,7 +31,8 @@ module.exports = {
          blue: colors.blue,
          indigo: colors.indigo,
          purple: colors.violet,
-         pink: colors.pink
+         pink: colors.pink,
+         ...customColors
       },
       spacing: {
          px: '1px',
@@ -209,6 +216,7 @@ module.exports = {
          raleway: 'Raleway'
       },
       fontSize: {
+         '36px': '36px',
          xs: ['0.75rem', { lineHeight: '1rem' }],
          sm: ['0.875rem', { lineHeight: '1.25rem' }],
          base: ['1rem', { lineHeight: '1.5rem' }],
