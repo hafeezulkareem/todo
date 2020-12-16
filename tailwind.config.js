@@ -3,6 +3,7 @@ const customColors = {
    burntSienna: '#EB5757',
    gray20: '#333333',
    royalBlue: '#2F80ED',
+   silver: '#BDBDBD',
    silverChalice: '#A9A9A9'
 }
 
@@ -35,8 +36,13 @@ module.exports = {
          ...customColors
       },
       spacing: {
-         px: '1px',
          0: '0px',
+         px: '1px',
+         '4px': '4px',
+         '12px': '12px',
+         '16px': '16px',
+         '24px': '24px',
+         '90px': '90px',
          0.5: '0.125rem',
          1: '0.25rem',
          1.5: '0.375rem',
@@ -216,6 +222,7 @@ module.exports = {
          raleway: 'Raleway'
       },
       fontSize: {
+         '14px': '14px',
          '36px': '36px',
          xs: ['0.75rem', { lineHeight: '1rem' }],
          sm: ['0.875rem', { lineHeight: '1.25rem' }],
