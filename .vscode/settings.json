@@ -4,5 +4,6 @@
         "reduxjs",
         "tailwindcss",
         "todos"
-    ]
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
