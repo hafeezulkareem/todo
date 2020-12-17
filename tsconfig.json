@@ -14,7 +14,6 @@
       "isolatedModules": true,
       "noEmit": true,
       "noImplicitAny": false,
-      "jsx": "react",
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
       "noFallthroughCasesInSwitch": true
