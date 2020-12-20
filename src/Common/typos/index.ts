@@ -17,6 +17,12 @@ export const Typo14Grey20MontserratSemiBold = styled(
    `}
 `
 
+export const Typo14WhiteMontserratSemiBold = styled(BaseSemiBoldMontserratText)`
+   ${tw`
+      text-14px text-white
+   `}
+`
+
 /* Raleway Font Styled Components */
 const BaseRalewayText = styled.span`
    ${tw`font-raleway`}

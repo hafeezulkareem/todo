@@ -1,4 +1,5 @@
-import tw, { css, styled, TwStyle } from 'twin.macro'
+import tw, { styled, TwStyle } from 'twin.macro'
+import { css } from 'styled-components'
 
 import { shapes, sizes, variants } from './constants'
 import { getButtonColors } from './utils'
