@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-import { ALL } from '../constants/UIConstants'
+import { ACTIVE, ALL, COMPLETED } from '../constants/UIConstants'
 import { RootState } from '../store'
 import { TodoType } from '../types'
 
@@ -40,8 +40,19 @@ export const {
    updateActiveTab
 } = todosSlice.actions
 
-export const todos = (state: RootState): Array<TodoType> =>
-   state.todoAppData.todos
+export const todos = (state: RootState): Array<TodoType> => {
+   const todos = state.todoAppData.todos
+   switch (state.todoAppData.activeTab) {
+      case ALL:
+         return todos
+      case ACTIVE:
+         return todos.filter((todo) => !todo.completed)
+      case COMPLETED:
+         return todos.filter((todo) => todo.completed)
+      default:
+         return todos
+   }
+}
 export const activeTab = (state: RootState): string =>
    state.todoAppData.activeTab
 
