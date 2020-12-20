@@ -2,9 +2,15 @@ import tw, { styled } from 'twin.macro'
 
 import { Typo18BlackMontserratMedium } from '../../../Common/typos'
 
-export const TodoContainer = styled.div`
+export const Section = styled.div`
    ${tw`
-        flex items-center mt-8px
+      flex items-center
+   `}
+`
+
+export const TodoContainer = styled(Section)`
+   ${tw`
+        flex items-center justify-between mt-8px
     `}
 `
 
@@ -17,4 +23,10 @@ export const TodoCheckboxContainer = styled.div`
 export const TodoText = styled(Typo18BlackMontserratMedium)`
    ${tw`ml-8px`}
    ${({ completed }) => (completed ? tw`line-through` : tw``)}
+`
+
+export const DeleteButton = styled.button`
+   ${tw`
+      bg-transparent p-0 border-none cursor-pointer
+   `}
 `

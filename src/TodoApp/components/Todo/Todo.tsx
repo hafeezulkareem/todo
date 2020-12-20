@@ -1,13 +1,16 @@
 import React, { ReactElement } from 'react'
 import { ImCheckboxUnchecked, ImCheckboxChecked } from 'react-icons/im'
 import { useDispatch } from 'react-redux'
+import { AiOutlineDelete } from 'react-icons/ai'
 
 import { colors } from '../../../Common/colors'
 
-import { toggleTodoState } from '../../reducers/todosSlice'
+import { deleteTodo, toggleTodoState } from '../../reducers/todosSlice'
 import { TodoType } from '../../types'
 
 import {
+   DeleteButton,
+   Section,
    TodoCheckboxContainer,
    TodoContainer,
    TodoText
@@ -22,16 +25,23 @@ const Todo = (props: TodoProps): ReactElement => {
    const { todo } = props
    return (
       <TodoContainer>
-         <TodoCheckboxContainer
-            onClick={() => dispatch(toggleTodoState(todo.id))}
-         >
-            {todo.completed ? (
-               <ImCheckboxChecked size={16} color={colors.royalBlue} />
-            ) : (
-               <ImCheckboxUnchecked size={16} />
-            )}
-         </TodoCheckboxContainer>
-         <TodoText completed={todo.completed}>{todo.todo}</TodoText>
+         <Section>
+            <TodoCheckboxContainer
+               onClick={() => dispatch(toggleTodoState(todo.id))}
+            >
+               {todo.completed ? (
+                  <ImCheckboxChecked size={16} color={colors.royalBlue} />
+               ) : (
+                  <ImCheckboxUnchecked size={16} />
+               )}
+            </TodoCheckboxContainer>
+            <TodoText completed={todo.completed}>{todo.todo}</TodoText>
+         </Section>
+         <Section>
+            <DeleteButton onClick={() => dispatch(deleteTodo(todo.id))}>
+               <AiOutlineDelete size={18} />
+            </DeleteButton>
+         </Section>
       </TodoContainer>
    )
 }
