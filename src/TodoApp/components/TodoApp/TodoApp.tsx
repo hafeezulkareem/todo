@@ -3,6 +3,7 @@ import React, { ReactElement } from 'react'
 import TodoHeader from '../TodoHeader'
 import TodoTabs from '../TodoTabs'
 import TodoForm from '../TodoForm'
+import TodosList from '../TodosList'
 
 import { TodoAppContainer } from './styledComponent'
 
@@ -11,6 +12,7 @@ const TodoApp = (): ReactElement => (
       <TodoHeader />
       <TodoTabs />
       <TodoForm />
+      <TodosList />
    </TodoAppContainer>
 )
 

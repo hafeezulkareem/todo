@@ -24,6 +24,12 @@ const todosSlice = createSlice({
       addTodo: (state, action: PayloadAction<TodoType>) => {
          state.todos.push(action.payload)
       },
+      toggleTodoState: (state, action: PayloadAction<string>) => {
+         const todo = state.todos.find((todo) => todo.id === action.payload)
+         if (todo) {
+            todo.completed = !todo.completed
+         }
+      },
       deleteTodo: (state, action: PayloadAction<string>) => {
          state.todos = state.todos.filter((todo) => todo.id !== action.payload)
       },
@@ -36,6 +42,7 @@ const todosSlice = createSlice({
 export const {
    initTodosState,
    addTodo,
+   toggleTodoState,
    deleteTodo,
    updateActiveTab
 } = todosSlice.actions

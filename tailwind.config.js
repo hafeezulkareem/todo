@@ -256,6 +256,7 @@ module.exports = {
       },
       fontSize: {
          '14px': '14px',
+         '18px': '18px',
          '36px': '36px',
          xs: ['0.75rem', { lineHeight: '1rem' }],
          sm: ['0.875rem', { lineHeight: '1.25rem' }],
