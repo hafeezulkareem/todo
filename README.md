@@ -21,32 +21,16 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
--  [Overview](#overview)
-   -  [Built With](#built-with)
--  [Features](#features)
--  [How to use](#how-to-use)
--  [Contact](#contact)
--  [Acknowledgements](#acknowledgements)
+- [Table of Contents](#table-of-contents)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How To Use](#how-to-use)
+- [Contact](#contact)
 
-<!-- OVERVIEW -->
-
-## Overview
-
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
--  Where can I see your demo?
--  What was your experience?
--  What have you learned/improved?
--  Your wisdom? :)
 
 ### Built With
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 -  [React](https://reactjs.org/)
 -  [Redux](https://redux.js.org/)
@@ -54,9 +38,11 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5) was to build an application to complete the given user stories.
+
+1. Add todo
+2. Delete todo
+3. Delete all completed todos
 
 ## How To Use
 
@@ -74,14 +60,6 @@ $ npm install
 # Run the app
 $ npm start
 ```
-
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
-
--  [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
--  [Node.js](https://nodejs.org/)
--  [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
 
