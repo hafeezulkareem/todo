@@ -32,7 +32,10 @@
       "@typescript-eslint/no-empty-function": "off",
       "@typescript-eslint/ban-types": "off",
       "@typescript-eslint/camelcase": 0,
-      "prettier/prettier": ["error", { "singleQuote": true }],
+      "prettier/prettier": [
+         "error",
+         { "singleQuote": true, "endOfLine": "auto" }
+      ],
       "arrow-body-style": [2, "as-needed"],
       "comma-dangle": [2, "never"],
       "max-depth": 0,
