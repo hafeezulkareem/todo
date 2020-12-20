@@ -3,6 +3,7 @@ export const colors = {
    burntOrange: '#D35400',
    burntSienna: '#EB5757',
    concrete: '#F2F2F2',
+   chestnutRose: '#D34E4E',
    darkGray10: 'rgba(174, 174, 174, .1)',
    darkGray: '#AEAEAE',
    darkSpringGreen10: 'rgba(20, 89, 52, .1)',

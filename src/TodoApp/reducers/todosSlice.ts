@@ -33,6 +33,9 @@ const todosSlice = createSlice({
       deleteTodo: (state, action: PayloadAction<string>) => {
          state.todos = state.todos.filter((todo) => todo.id !== action.payload)
       },
+      deleteCompletedTodos: (state) => {
+         state.todos = state.todos.filter((todo) => !todo.completed)
+      },
       updateActiveTab: (state, action: PayloadAction<string>) => {
          state.activeTab = action.payload
       }
@@ -44,6 +47,7 @@ export const {
    addTodo,
    toggleTodoState,
    deleteTodo,
+   deleteCompletedTodos,
    updateActiveTab
 } = todosSlice.actions
 
@@ -62,5 +66,8 @@ export const todos = (state: RootState): Array<TodoType> => {
 }
 export const activeTab = (state: RootState): string =>
    state.todoAppData.activeTab
+
+export const completedTodosCount = (state: RootState): number =>
+   state.todoAppData.todos.filter((todo) => todo.completed).length
 
 export default todosSlice.reducer

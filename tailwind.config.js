@@ -4,6 +4,7 @@ const customColors = {
    burntOrange: '#D35400',
    burntSienna: '#EB5757',
    concrete: '#F2F2F2',
+   chestnutRose: '#D34E4E',
    darkGray10: 'rgba(174, 174, 174, .1)',
    darkGray: '#AEAEAE',
    darkSpringGreen10: 'rgba(20, 89, 52, .1)',
@@ -255,6 +256,7 @@ module.exports = {
          raleway: 'Raleway'
       },
       fontSize: {
+         '12px': '12px',
          '14px': '14px',
          '18px': '18px',
          '36px': '36px',

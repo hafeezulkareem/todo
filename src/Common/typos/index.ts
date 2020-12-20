@@ -13,6 +13,12 @@ const BaseMediumMontserratText = styled(BaseMontserratText)`
    ${tw`font-medium`}
 `
 
+export const Typo12WhiteMontserratSemiBold = styled(BaseSemiBoldMontserratText)`
+   ${tw`
+      text-12px text-white
+   `}
+`
+
 export const Typo14Grey20MontserratSemiBold = styled(
    BaseSemiBoldMontserratText
 )`
