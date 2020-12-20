@@ -4,7 +4,7 @@ import { Button } from '../../../Common/components/Button'
 import Input from '../../../Common/components/Input'
 import { Typo14WhiteMontserratSemiBold } from '../../../Common/typos'
 
-export const Form = styled.form`
+export const FormContainer = styled.div`
    ${tw`
         flex items-center mt-16px
     `}

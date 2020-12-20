@@ -4,8 +4,9 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { colors } from '../../../Common/colors'
 import { Button } from '../../../Common/components/Button'
-import { COMPLETED } from '../../constants/UIConstants'
+import { showSuccessToast } from '../../../Common/utils/toastUtils'
 
+import { COMPLETED } from '../../constants/UIConstants'
 import {
    activeTab,
    completedTodosCount,
@@ -28,7 +29,10 @@ const TodoFooter = (): ReactElement => {
          {tab === COMPLETED ? (
             <DeleteAllButton
                color={Button.colors.danger}
-               onClick={() => dispatch(deleteCompletedTodos())}
+               onClick={() => {
+                  dispatch(deleteCompletedTodos())
+                  showSuccessToast('all todos deleted')
+               }}
                disabled={todosCount === 0}
             >
                <AiOutlineDelete color={colors.white} />

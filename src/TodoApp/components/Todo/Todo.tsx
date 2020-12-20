@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import { AiOutlineDelete } from 'react-icons/ai'
 
 import { colors } from '../../../Common/colors'
+import { showSuccessToast } from '../../../Common/utils/toastUtils'
 
 import { deleteTodo, toggleTodoState } from '../../reducers/todosSlice'
 import { TodoType } from '../../types'
@@ -38,7 +39,12 @@ const Todo = (props: TodoProps): ReactElement => {
             <TodoText completed={todo.completed}>{todo.todo}</TodoText>
          </Section>
          <Section>
-            <DeleteButton onClick={() => dispatch(deleteTodo(todo.id))}>
+            <DeleteButton
+               onClick={() => {
+                  dispatch(deleteTodo(todo.id))
+                  showSuccessToast('todo deleted')
+               }}
+            >
                <AiOutlineDelete size={18} />
             </DeleteButton>
          </Section>
